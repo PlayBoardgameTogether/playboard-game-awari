@@ -1,0 +1,9 @@
+{
+  "repository": "PlayBoardgameTogether/playboard-game-awari",
+  "assets": [
+    {
+      "id": "online.awari",
+      "archive": "awari"
+    }
+  ]
+}

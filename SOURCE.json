@@ -1,0 +1,37 @@
+{
+  "repository": "PlayBoardgameTogether/PlayBoardgameTogether",
+  "commit": "a7e36d32e2febeb5bd7013752f099d01d0502316",
+  "game": "awari",
+  "platformVersion": "0.17.0",
+  "sdkVersion": "0.1.0",
+  "ownedFiles": [
+    "game-packages/awari/README.md",
+    "game-packages/awari/art/cover.svg",
+    "game-packages/awari/art/icon.svg",
+    "game-packages/awari/client.html",
+    "game-packages/awari/game.json",
+    "game-packages/awari/server.txt",
+    "scripts/package-awari.mjs",
+    "scripts/awari-package.mjs",
+    "tests/unit/awari-package.test.ts"
+  ],
+  "files": {
+    "game-packages/awari/README.md": "0fd85fc1460b98cfe40f681ed6de82387468e1ee6eb6d47c0f36824b3385ebad",
+    "game-packages/awari/art/cover.svg": "0f5f0e733e1baa3a2fb2eef553d7713f914ed76f62c00b38de8cf19b95753c16",
+    "game-packages/awari/art/icon.svg": "5d72ad1d7b4bfa0af8fe320755b340be6c552ba883be8b6a712d767261fd9326",
+    "game-packages/awari/client.html": "1097db4fa0947cb7903e76d6ffb82827074eb9babe2b92f8dea1c33fca11b109",
+    "game-packages/awari/game.json": "22dcb9a49ca87967b808d0337123244b2ffcf6c71fce135c89dcd9322b6ab91f",
+    "game-packages/awari/server.txt": "760d2dd9e7f2b1ce327f330ead7256d70b5781e5c5b0584b8fc614478c487732",
+    "scripts/package-awari.mjs": "9af239f530dde1d7bd65322f3eb71c7ed1e2312adbc98e83b279f691195e7c9c",
+    "scripts/awari-package.mjs": "fa03fccab69383c1a2f2311f9b2803a36ef0ad763766bc17d8393bd5230d01cd",
+    "tests/unit/awari-package.test.ts": "bed919e67aedb5ee6cb3be63e38fd9ffaaaeafd964d4eace3ef604ff368d3d53",
+    "packages/game-sdk/src/index.ts": "7cac28f2e18b64a995d2980e1d57c4d877387ef1231a83e9f7b877197140a8c3",
+    "apps/api/src/registry/package-runtime.ts": "c92504b1a982e28198d68cf3b598b7cce5f88e7440f2257a7001cb2e919e77c1",
+    "apps/api/src/catalog/game-package.ts": "bf310e4dd4958afe06b91cf14ece1d09a4bfc2859731a983d96687fa02b9a00c",
+    "apps/api/src/catalog/package-art.ts": "b4af59861833180cac85ad873b20c55969a51c475b6413cbba4770ac7bd7dd40",
+    "apps/api/src/errors.ts": "afa3d78ef9c2652db7a91f5644dc00d11684f17b67c48dfcbca4fceb459cddd1"
+  },
+  "adaptations": [
+    "apps/api/src/errors.ts: type-only ErrorCode import points to an extracted platform error-code snapshot"
+  ]
+}
