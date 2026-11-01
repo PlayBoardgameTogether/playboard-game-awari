@@ -329,7 +329,10 @@
           animation: none;
         }
       }
-    </style>
+    #my-name, #their-name, #status { min-width: 0; overflow-wrap: anywhere; }
+    .scoreboard { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+    #my-name, #their-name { flex-basis: 100%; }
+</style>
   </head>
   <body>
     <main id="table">
@@ -392,7 +395,13 @@
           repetition: '三次重复局面，已收取双方余子',
           'quiet-limit': '连续 200 手无人吃子，已收取双方余子',
         };
-        let view = null,
+        let playerNames = {};
+function playerName(seatId, ownSeatId, fallback) {
+  const raw = Object.hasOwn(playerNames, seatId) ? playerNames[seatId] : undefined;
+  const name = typeof raw === 'string' ? raw.trim() : '';
+  return name ? name + (seatId === ownSeatId ? '（你）' : '') : fallback;
+}
+let view = null,
           busy = true,
           selected = null,
           submitted = false,
@@ -445,28 +454,22 @@
         function render() {
           if (!view) return;
           const mine = view.yourIndex === 1 ? 1 : 0;
-          $('my-name').textContent = view.you === null ? '座位 1' : '你';
-          $('their-name').textContent = view.you === null ? '座位 2' : '对手';
+          $('my-name').textContent = playerName(view.players[mine].seatId, view.you, view.you === null ? '座位 1' : '你');
+          $('their-name').textContent = playerName(view.players[1 - mine].seatId, view.you, view.you === null ? '座位 2' : '对手');
           $('my-score').textContent = view.players[mine].score;
           $('their-score').textContent = view.players[1 - mine].score;
           const ended = view.outcome.status === 'finished';
           $('status').textContent = ended
             ? view.outcome.winners.length === 0
               ? '平局'
-              : view.you === null
-                ? '座位 ' +
-                  (view.players.findIndex((p) => p.seatId === view.outcome.winners[0]) + 1) +
-                  ' 获胜'
-                : view.outcome.winners.includes(view.you)
-                  ? '你获胜了'
-                  : '对手获胜'
+              : playerName(view.outcome.winners[0], view.you, '座位 ' + (view.players.findIndex(p => p.seatId === view.outcome.winners[0]) + 1)) + ' 获胜'
             : busy || submitted
               ? '正在同步这一手…'
               : canAct()
                 ? view.mustFeed
                   ? '轮到你播种 · 必须送子给对手'
                   : '轮到你播种'
-                : '等待对手播种';
+                : '等待' + playerName(view.currentSeat, view.you, '对手') + '播种';
           const planned = preview();
           for (const [pit, button] of nodes) {
             const legal = canAct() && view.actions.some((action) => action.pit === pit);
@@ -518,7 +521,7 @@
             ? '第 ' +
               view.moveCount +
               ' 手 · ' +
-              (view.last.player === mine ? '己方' : '对方') +
+              playerName(view.players[view.last.player].seatId, view.you, view.last.player === mine ? '己方' : '对方') +
               '从 ' +
               label(view.last.pit) +
               ' 坑播出 ' +
@@ -554,7 +557,8 @@
             submitted = false;
           }
           const rebuild = !view || next.yourIndex !== view.yourIndex;
-          view = next;
+          playerNames = event.data.playerNames && typeof event.data.playerNames === 'object' ? event.data.playerNames : {};
+  view = next;
           busy = event.data.busy === true;
           stamp = nextStamp;
           if (busy) selected = null;
