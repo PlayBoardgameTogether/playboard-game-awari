@@ -31,7 +31,7 @@ try {
   await browser.close();
 }
 files['game.json'] = Buffer.from(JSON.stringify(descriptor));
-const output = new URL('../dist/game-packages/awari-1.0.0.zip', import.meta.url);
+const output = new URL('../dist/game-packages/awari-1.0.1.zip', import.meta.url);
 await mkdir(new URL('.', output), { recursive: true });
 const bytes = zipSync(files, { mtime: new Date('2026-10-24T00:00:00Z'), level: 9 });
 await writeFile(output, bytes);
