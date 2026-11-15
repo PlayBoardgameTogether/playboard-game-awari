@@ -1,0 +1,29 @@
+{
+  "version": "1.1.0",
+  "kind": "presentation-art",
+  "game": "awari",
+  "ruleVersionUnchanged": true,
+  "assets": [
+    {
+      "role": "icon",
+      "file": "icon.png",
+      "sha256": "24f5a32a73725cc0e5c03f87c647f26cc56a49b3145484f40306041471261ee8",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "role": "cover",
+      "file": "cover.png",
+      "sha256": "b57d8a13c0aa97bec510e5360015e9de378d513de24668fc2520110766bc6da8",
+      "width": 960,
+      "height": 600
+    },
+    {
+      "role": "background",
+      "file": "background.png",
+      "sha256": "6c6f12711813eb28038ad05b5a40f7bf62abb28d2532b0f9232f48b19ba2047a",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

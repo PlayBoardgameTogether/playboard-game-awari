@@ -1,0 +1,51 @@
+{
+  "version": "1.1.0",
+  "kind": "presentation-art",
+  "generator": "built-in image_gen",
+  "license": "GPL-3.0-only",
+  "rulesChanged": false,
+  "assets": [
+    {
+      "game": "awari",
+      "role": "icon",
+      "prompt": "Use case: stylized-concept. NEW original artwork for a premium PlayBoard board game platform. Sophisticated richly detailed fine PIXEL ART, visible tiny square pixel clusters, tactile physical board game pieces, refined material textures, soft daylight, restrained highlights and natural shadows, mature inviting mood, clear readable silhouette. Coordinated natural wood and dark navy with theme-specific colors. No UI, no paragraphs, no title, no brand logo, no watermark, no border. Avoid generic flat vector, blurry painterly style, glossy casino, low detail cartoon. Asset: square 1024x1024 game avatar. Close-up central iconic arrangement of the main game objects, all important edges visible, 8% breathing room, instantly recognizable even at 64px. Subject: a traditional carved wooden Awari board with exactly two parallel rows of six round pits, twelve pits total and NO end stores, small golden seeds arranged in pits, warm African textile accents.",
+      "original": "design/play-art-1.1.0/awari/icon-original.png",
+      "source": "game-packages/awari/art/play-1.1.0/icon.png",
+      "originalSha256": "8917f494e2397aba750b0028a9e4a66ebc64f13db5f8a043c78425a3e750393b",
+      "sourceSha256": "24f5a32a73725cc0e5c03f87c647f26cc56a49b3145484f40306041471261ee8",
+      "webp": "awari-icon.webp",
+      "webpSha256": "c1390878997d10bdfb279a9c3564c48a79b2040525d9c6af3e45f512f8a2842d",
+      "width": 512,
+      "height": 512,
+      "bytes": 121426
+    },
+    {
+      "game": "awari",
+      "role": "cover",
+      "prompt": "Use case: stylized-concept. NEW original artwork for a premium PlayBoard board game platform. Sophisticated richly detailed fine PIXEL ART, visible tiny square pixel clusters, tactile physical board game pieces, refined material textures, soft daylight, restrained highlights and natural shadows, mature inviting mood, clear readable silhouette. Coordinated natural wood and dark navy with theme-specific colors. No UI, no paragraphs, no title, no brand logo, no watermark, no border. Avoid generic flat vector, blurry painterly style, glossy casino, low detail cartoon. Asset: landscape 16:10 game cover illustration. Compelling low three-quarter close view across the playable board and pieces, a small scene that makes the viewer want to sit down and play, strong foreground focal point, room to crop safely. Subject: a traditional carved wooden Awari board with exactly two parallel rows of six round pits, twelve pits total and NO end stores, small golden seeds arranged in pits, warm African textile accents.",
+      "original": "design/play-art-1.1.0/awari/cover-original.png",
+      "source": "game-packages/awari/art/play-1.1.0/cover.png",
+      "originalSha256": "78eb252ad950919128e72bf91555c646e56444d37a8395e8f5783da8e7f7aa9c",
+      "sourceSha256": "b57d8a13c0aa97bec510e5360015e9de378d513de24668fc2520110766bc6da8",
+      "webp": "awari-cover.webp",
+      "webpSha256": "20b29471a5e94d3ced2c0d8f0d842dad4ee40d1d492d539eec52180f16f230c3",
+      "width": 960,
+      "height": 600,
+      "bytes": 227576
+    },
+    {
+      "game": "awari",
+      "role": "background",
+      "prompt": "Use case: stylized-concept. NEW original artwork for a premium PlayBoard board game platform. Sophisticated richly detailed fine PIXEL ART, visible tiny square pixel clusters, tactile physical board game pieces, refined material textures, soft daylight, restrained highlights and natural shadows, mature inviting mood, clear readable silhouette. Coordinated natural wood and dark navy with theme-specific colors. No UI, no paragraphs, no title, no brand logo, no watermark, no border. Avoid generic flat vector, blurry painterly style, glossy casino, low detail cartoon. Asset: wide 16:9 immersive background original art. Rich thematic environment extending around a softly lit tabletop in the foreground, detailed atmosphere at the edges, calm low contrast central area suitable behind game UI, no embedded interface. Subject: a traditional carved wooden Awari board with exactly two parallel rows of six round pits, twelve pits total and NO end stores, small golden seeds arranged in pits, warm African textile accents.",
+      "original": "design/play-art-1.1.0/awari/background-original.png",
+      "source": "game-packages/awari/art/play-1.1.0/background.png",
+      "originalSha256": "54ad117948c4abcee8875d4015862ffc71274f1115c1d6a1a8f56e80c584bfe6",
+      "sourceSha256": "6c6f12711813eb28038ad05b5a40f7bf62abb28d2532b0f9232f48b19ba2047a",
+      "webp": "awari-background.webp",
+      "webpSha256": "2c5bcc6ff58faa8d67d60b078b02c369ff11458f18d68d5aaa0e8e7b2aac18a2",
+      "width": 1280,
+      "height": 720,
+      "bytes": 357188
+    }
+  ]
+}
