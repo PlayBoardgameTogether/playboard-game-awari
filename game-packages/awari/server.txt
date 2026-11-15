@@ -115,7 +115,7 @@ function actions(state) {
 }
 const game = {
   manifest: {
-    id: 'online.awari', version: '1.0.0', contentVersion: '1.0.0', sdkRange: '^0.1.0',
+    id: 'online.awari', version: '1.0.1', contentVersion: '1.0.0', sdkRange: '^0.1.0',
     name: '阿瓦里', description: '双人非洲播种棋：播下种子、连吃二三子，必须给空仓的对手留种。Abapa 规则，支持基础脚本 AI。',
     players: { min: 2, max: 2 }, mode: 'rules-driven', capabilities: ['turn-based', 'spatial'],
     defaultAssetPack: { id: 'online.awari.default', version: '1.0.0' }, developmentOnly: false

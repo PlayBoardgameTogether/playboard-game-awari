@@ -1,0 +1,13 @@
+{
+  "role": "game-avatar",
+  "source": "icon-source.png",
+  "sourceSha256": "307e80098e0b48b51031982c2682a8e6e3b7275a39cdc3b1a30a2aeb5a0c7e05",
+  "userSelected": true,
+  "export": "game-packages/awari/art/icon.png",
+  "size": [
+    512,
+    512
+  ],
+  "fit": "contain",
+  "backgroundUsage": false
+}
